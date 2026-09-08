@@ -37,7 +37,7 @@ final class SourceMap
 	private static $sourceMap = [
 		[
 			'path' => '/',
-			'src' => 'component.jext',
+			'src' => 'component.jext.example',
 			'dest' => '{{component}}.xml',
 			'package' => 'component',
 			'client' => 'administrator',
@@ -45,7 +45,7 @@ final class SourceMap
 		],
 		[
 			'path' => '/',
-			'src' => 'config.jext',
+			'src' => 'config.jext.example',
 			'dest' => 'config.xml',
 			'package' => 'component',
 			'client' => 'administrator',
@@ -53,7 +53,7 @@ final class SourceMap
 		],
 		[
 			'path' => '/',
-			'src' => 'access.jext',
+			'src' => 'access.jext.example',
 			'dest' => 'access.xml',
 			'package' => 'component',
 			'client' => 'administrator',
@@ -67,35 +67,35 @@ final class SourceMap
 		],
 		[
 			'path' => '/forms',
-			'src' => 'note.jext',
+			'src' => 'note.jext.example',
 			'dest' => 'note.xml',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/forms',
-			'src' => 'filter_notes.jext',
+			'src' => 'filter_notes.jext.example',
 			'dest' => 'filter_notes.xml',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/helpers',
-			'src' => 'component.jext',
+			'src' => 'component.jext.example',
 			'dest' => '{{component_capitalize}}Helper.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'component'
 		],
 		[ 	'path' => '/services',
-			'src' => 'provider.jext',
+			'src' => 'provider.jext.example',
 			'dest' => 'provider.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'component'
 		],
 		[ 	'path' => '/sql',
-			'src' => 'install.mysql.utf8.jext',
+			'src' => 'install.mysql.utf8.jext.example',
 			'dest' => 'install.mysql.utf8.sql',
 			'package' => 'component',
 			'client' => 'administrator',
@@ -107,56 +107,56 @@ final class SourceMap
 			'type' => 'component'
 		],
 		[ 	'path' => '/tmpl/note',
-			'src' => 'edit.jext',
+			'src' => 'edit.jext.example',
 			'dest' => 'edit.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/tmpl/notes',
-			'src' => 'default.jext',
+			'src' => 'default.jext.example',
 			'dest' => 'default.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/tmpl/icomoon',
-			'src' => 'default.jext',
+			'src' => 'default.jext.example',
 			'dest' => 'default.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/Controller',
-			'src' => 'DisplayController.jext',
+			'src' => 'DisplayController.jext.example',
 			'dest' => 'DisplayController.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/Controller',
-			'src' => 'IcomoonController.jext',
+			'src' => 'IcomoonController.jext.example',
 			'dest' => 'IcomoonController.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/Controller',
-			'src' => 'NoteController.jext',
+			'src' => 'NoteController.jext.example',
 			'dest' => 'NoteController.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/Controller',
-			'src' => 'NotesController.jext',
+			'src' => 'NotesController.jext.example',
 			'dest' => 'NotesController.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/Extension',
-			'src' => 'ExtensionComponent.jext',
+			'src' => 'ExtensionComponent.jext.example',
 			'dest' => '{{component_capitalize}}Component.php',
 			'package' => 'component',
 			'client' => 'administrator',
@@ -168,14 +168,14 @@ final class SourceMap
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/Helper',
-			'src' => 'ExtensionHelper.jext',
+			'src' => 'ExtensionHelper.jext.example',
 			'dest' => '{{component_capitalize}}Helper.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/Helper',
-			'src' => 'Icomoon.jext',
+			'src' => 'Icomoon.jext.example',
 			'dest' => 'Icomoon.php',
 			'package' => 'component',
 			'client' => 'administrator',
@@ -187,21 +187,21 @@ final class SourceMap
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/Model',
-			'src' => 'NoteModel.jext',
+			'src' => 'NoteModel.jext.example',
 			'dest' => 'NoteModel.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/Model',
-			'src' => 'NotesModel.jext',
+			'src' => 'NotesModel.jext.example',
 			'dest' => 'NotesModel.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/Service/HTML',
-			'src' => 'Icon.jext',
+			'src' => 'Icon.jext.example',
 			'dest' => 'Icon.php',
 			'package' => 'component',
 			'client' => 'administrator',
@@ -213,7 +213,7 @@ final class SourceMap
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/Table',
-			'src' => 'NoteTable.jext',
+			'src' => 'NoteTable.jext.example',
 			'dest' => 'NoteTable.php',
 			'package' => 'component',
 			'client' => 'administrator',
@@ -225,21 +225,21 @@ final class SourceMap
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/View/Icomoon',
-			'src' => 'HtmlView.jext',
+			'src' => 'HtmlView.jext.example',
 			'dest' => 'HtmlView.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/View/Note',
-			'src' => 'HtmlView.jext',
+			'src' => 'HtmlView.jext.example',
 			'dest' => 'HtmlView.php',
 			'package' => 'component',
 			'client' => 'administrator',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/View/Notes',
-			'src' => 'HtmlView.jext',
+			'src' => 'HtmlView.jext.example',
 			'dest' => 'HtmlView.php',
 			'package' => 'component',
 			'client' => 'administrator',
@@ -258,28 +258,28 @@ final class SourceMap
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/Controller',
-			'src' => 'DisplayController.jext',
+			'src' => 'DisplayController.jext.example',
 			'dest' => 'DisplayController.php',
 			'package' => 'component',
 			'client' => 'site',
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/Controller',
-			'src' => 'NotesController.jext',
+			'src' => 'NotesController.jext.example',
 			'dest' => 'NotesController.php',
 			'package' => 'component',
 			'client' => 'site',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/Dispatcher',
-			'src' => 'Dispatcher.jext',
+			'src' => 'Dispatcher.jext.example',
 			'dest' => 'Dispatcher.php',
 			'package' => 'component',
 			'client' => 'site',
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/Helper',
-			'src' => 'RouteHelper.jext',
+			'src' => 'RouteHelper.jext.example',
 			'dest' => 'RouteHelper.php',
 			'package' => 'component',
 			'client' => 'site',
@@ -291,21 +291,21 @@ final class SourceMap
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/Model',
-			'src' => 'NoteModel.jext',
+			'src' => 'NoteModel.jext.example',
 			'dest' => 'NoteModel.php',
 			'package' => 'component',
 			'client' => 'site',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/Model',
-			'src' => 'NotesModel.jext',
+			'src' => 'NotesModel.jext.example',
 			'dest' => 'NotesModel.php',
 			'package' => 'component',
 			'client' => 'site',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/Service',
-			'src' => 'Router.jext',
+			'src' => 'Router.jext.example',
 			'dest' => 'Router.php',
 			'package' => 'component',
 			'client' => 'site',
@@ -317,14 +317,14 @@ final class SourceMap
 			'type' => 'component'
 		],
 		[ 	'path' => '/src/View/Note',
-			'src' => 'HtmlView.jext',
+			'src' => 'HtmlView.jext.example',
 			'dest' => 'HtmlView.php',
 			'package' => 'component',
 			'client' => 'site',
 			'type' => 'view'
 		],
 		[ 	'path' => '/src/View/Notes',
-			'src' => 'HtmlView.jext',
+			'src' => 'HtmlView.jext.example',
 			'dest' => 'HtmlView.php',
 			'package' => 'component',
 			'client' => 'site',
@@ -336,21 +336,21 @@ final class SourceMap
 			'type' => 'component'
 		],
 		[ 	'path' => '/tmpl/note',
-			'src' => 'default.jext',
+			'src' => 'default.jext.example',
 			'dest' => 'default.php',
 			'package' => 'component',
 			'client' => 'site',
 			'type' => 'view'
 		],
 		[ 	'path' => '/tmpl/notes',
-			'src' => 'default.jext',
+			'src' => 'default.jext.example',
 			'dest' => 'default.php',
 			'package' => 'component',
 			'client' => 'site',
 			'type' => 'view'
 		],
 		[ 	'path' => '/tmpl/notes',
-			'src' => 'menu.jext',
+			'src' => 'menu.jext.example',
 			'dest' => 'default.xml',
 			'package' => 'component',
 			'client' => 'site',
@@ -360,21 +360,21 @@ final class SourceMap
 		/** Data for the language files. */
 		/** his language path is relative to Assets/language path */
 		[ 	'path' => '/',
-			'src' => 'extension.jext',
+			'src' => 'extension.jext.example',
 			'dest' => '{{prefix_component}}.ini',
 			'package' => 'language',
 			'client' => 'administrator',
 			'type' => 'component'
 		],
 		[ 	'path' => '/',
-			'src' => 'extension.sys.jext',
+			'src' => 'extension.sys.jext.example',
 			'dest' => '{{prefix_component}}.sys.ini',
 			'package' => 'language',
 			'client' => 'administrator',
 			'type' => 'component'
 		],
 		[ 	'path' => '/',
-			'src' => 'extension.jext',
+			'src' => 'extension.jext.example',
 			'dest' => '{{prefix_component}}.ini',
 			'package' => 'language',
 			'client' => 'site',
@@ -383,7 +383,7 @@ final class SourceMap
 
 		/** Data for media files. */
 		[ 	'path' => '/',
-			'src' => 'joomla.asset.jext',
+			'src' => 'joomla.asset.jext.example',
 			'dest' => 'joomla.asset.json',
 			'package' => 'media',
 			'type' => 'component',
@@ -395,7 +395,7 @@ final class SourceMap
 			'client' => '',
 		],
 		[ 	'path' => '/js',
-			'src' => 'icons.jext',
+			'src' => 'icons.jext.example',
 			'dest' => 'icons.js',
 			'package' => 'media',
 			'type' => 'view',
@@ -407,21 +407,21 @@ final class SourceMap
 			'client' => '',
 		],
 		[ 	'path' => '/css',
-			'src' => 'icons.jext',
+			'src' => 'icons.jext.example',
 			'dest' => 'icons.css',
 			'package' => 'media',
 			'type' => 'view',
 			'client' => '',
 		],
 		[ 	'path' => '/css',
-			'src' => 'notes.jext',
+			'src' => 'notes.jext.example',
 			'dest' => 'notes.css',
 			'package' => 'media',
 			'type' => 'view',
 			'client' => '',
 		],
 		[ 	'path' => '/css',
-			'src' => 'styles.jext',
+			'src' => 'styles.jext.example',
 			'dest' => 'styles.css',
 			'package' => 'media',
 			'type' => 'component',
@@ -445,77 +445,77 @@ final class SourceMap
 	private static $viewSourceMap = [
 		[
 			'path' => '/tmpl/{{plural}}',
-			'src' => 'default.jext',
+			'src' => 'default.jext.example',
 			'dest' => 'default.php',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/tmpl/{{singular}}',
-			'src' => 'edit.jext',
+			'src' => 'edit.jext.example',
 			'dest' => 'edit.php',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/View/{{plural_capitalize}}',
-			'src' => 'HtmlView.jext',
+			'src' => 'HtmlView.jext.example',
 			'dest' => 'HtmlView.php',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/View/{{singular_capitalize}}',
-			'src' => 'HtmlView.jext',
+			'src' => 'HtmlView.jext.example',
 			'dest' => 'HtmlView.php',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/Controller',
-			'src' => 'singular.jext',
+			'src' => 'singular.jext.example',
 			'dest' => '{{singular_capitalize}}Controller.php',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/Controller',
-			'src' => 'plural.jext',
+			'src' => 'plural.jext.example',
 			'dest' => '{{plural_capitalize}}Controller.php',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/Model',
-			'src' => 'plural.jext',
+			'src' => 'plural.jext.example',
 			'dest' => '{{plural_capitalize}}Model.php',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/Model',
-			'src' => 'singular.jext',
+			'src' => 'singular.jext.example',
 			'dest' => '{{singular_capitalize}}Model.php',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/Table',
-			'src' => 'table.jext',
+			'src' => 'table.jext.example',
 			'dest' => '{{singular_capitalize}}Table.php',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/forms',
-			'src' => 'form.jext',
+			'src' => 'form.jext.example',
 			'dest' => '{{singular}}.xml',
 			'client' => 'administrator',
 			'package' => 'view'
 		],
 		[
 			'path' => '/forms',
-			'src' => 'filter.jext',
+			'src' => 'filter.jext.example',
 			'dest' => 'filter_{{plural}}.xml',
 			'client' => 'administrator',
 			'package' => 'view'
@@ -524,56 +524,56 @@ final class SourceMap
 		/** Site views. */
 		[
 			'path' => '/tmpl/{{plural}}',
-			'src' => 'default.jext',
+			'src' => 'default.jext.example',
 			'dest' => 'default.php',
 			'client' => 'site',
 			'package' => 'view'
 		],
 		[
 			'path' => '/tmpl/{{plural}}',
-			'src' => 'menu.jext',
+			'src' => 'menu.jext.example',
 			'dest' => 'default.xml',
 			'client' => 'site',
 			'package' => 'view'
 		],
 		[
 			'path' => '/tmpl/{{singular}}',
-			'src' => 'default.jext',
+			'src' => 'default.jext.example',
 			'dest' => 'default.php',
 			'client' => 'site',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/View/{{plural_capitalize}}',
-			'src' => 'HtmlView.jext',
+			'src' => 'HtmlView.jext.example',
 			'dest' => 'HtmlView.php',
 			'client' => 'site',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/View/{{singular_capitalize}}',
-			'src' => 'HtmlView.jext',
+			'src' => 'HtmlView.jext.example',
 			'dest' => 'HtmlView.php',
 			'client' => 'site',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/Controller',
-			'src' => 'plural.jext',
+			'src' => 'plural.jext.example',
 			'dest' => '{{plural_capitalize}}Controller.php',
 			'client' => 'site',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/Model',
-			'src' => 'plural.jext',
+			'src' => 'plural.jext.example',
 			'dest' => '{{plural_capitalize}}Model.php',
 			'client' => 'site',
 			'package' => 'view'
 		],
 		[
 			'path' => '/src/Model',
-			'src' => 'singular.jext',
+			'src' => 'singular.jext.example',
 			'dest' => '{{singular_capitalize}}Model.php',
 			'client' => 'site',
 			'package' => 'view'
@@ -590,7 +590,7 @@ final class SourceMap
 	private static $injectionSourceMap = [
 		[
 			'directory' => '/administrator/language/en-GB',
-			'src' => 'language.jext',
+			'src' => 'language.jext.example',
 			'dest' => '{{prefix_component}}.ini',
 			'client' => 'administrator',
 			'package' => 'injection',
@@ -598,7 +598,7 @@ final class SourceMap
 		],
 		[
 			'directory' => '/administrator/language/en-GB',
-			'src' => 'language.sys.jext',
+			'src' => 'language.sys.jext.example',
 			'dest' => '{{prefix_component}}.sys.ini',
 			'client' => 'administrator',
 			'package' => 'injection',
@@ -606,7 +606,7 @@ final class SourceMap
 		],
 		[
 			'directory' => '/administrator/components/{{prefix_component}}',
-			'src' => 'submenu.jext',
+			'src' => 'submenu.jext.example',
 			'dest' => '{{component}}.xml',
 			'client' => 'administrator',
 			'package' => 'injection',
@@ -614,7 +614,7 @@ final class SourceMap
 		],
 		[
 			'directory' => '/administrator/components/{{prefix_component}}/sql',
-			'src' => 'install.sql.jext',
+			'src' => 'install.sql.jext.example',
 			'dest' => 'install.mysql.utf8.sql',
 			'client' => 'administrator',
 			'package' => 'injection',
@@ -622,7 +622,7 @@ final class SourceMap
 		],
 		[
 			'directory' => '/administrator/language/en-GB',
-			'src' => 'menuitem.language.jext',
+			'src' => 'menuitem.language.jext.example',
 			'dest' => '{{prefix_component}}.sys.ini',
 			'client' => 'site',
 			'package' => 'injection',
@@ -630,7 +630,7 @@ final class SourceMap
 		],
 		[
 			'directory' => '/components/{{prefix_component}}/src/Service',
-			'src' => 'router.jext',
+			'src' => 'router.jext.example',
 			'dest' => 'Router.php',
 			'client' => 'site',
 			'package' => 'injection',
@@ -638,7 +638,7 @@ final class SourceMap
 		],
 		[
 			'directory' => '/components/{{prefix_component}}/src/Service',
-			'src' => 'router.methods.jext',
+			'src' => 'router.methods.jext.example',
 			'dest' => 'Router.php',
 			'client' => 'site',
 			'package' => 'injection',

@@ -1,6 +1,6 @@
 {
 	"name": "ahamed/jext-cli",
-	"description": "This is a cli tool for building joomla component",
+	"description": "CLI tool for scaffolding J4 extension component boilerplate",
 	"type": "library",
 	"license": "MIT",
 	"version": "1.0.0",
@@ -11,7 +11,8 @@
 		}
 	],
 	"scripts": {
-		"phpcs": "./vendor/bin/phpcs --extensions=php -p ."
+		"phpcs": "./vendor/bin/phpcs --extensions=php -p .",
+		"test": "phpunit --no-coverage"
 	},
 	"autoload": {
 		"psr-4": {
@@ -19,6 +20,12 @@
 		}
 	},
 	"require-dev": {
-		"squizlabs/php_codesniffer": "*"
+		"squizlabs/php_codesniffer": "*",
+		"phpunit/phpunit": "^10.5"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Ahamed\\Jext\\Tests\\": "tests/"
+		}
 	}
 }

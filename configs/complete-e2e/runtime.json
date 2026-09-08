@@ -1,0 +1,13 @@
+{
+  "schema": "hurc-complete-e2e-runtime/v1",
+  "description": "CLI adapter so CJ-Hurc/jext-cli compile reconciles dual-origin cli:jext-cli (static devtools run.sh + runtime list). PHP bin/ is the product; run.sh is the occupancy driver.",
+  "adapters": [
+    {
+      "id": "jext-cli-runtime",
+      "kind": "cli",
+      "surface_kind": "cli",
+      "timeout_sec": 15,
+      "argv": ["bash", "configs/complete-e2e/list-runtime-clis.sh"]
+    }
+  ]
+}

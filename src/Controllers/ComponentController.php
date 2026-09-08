@@ -358,7 +358,7 @@ class ComponentController extends BaseController implements ControllerInterface
 	 */
 	private function injectAssets() : void
 	{
-		$src = __DIR__ . '/../Assets/injection/media/asset.jext';
+		$src = __DIR__ . '/../Assets/injection/media/asset.jext.example';
 		$dest = $this->workingDirectory . '/media/' .
 			ComponentHelper::getModifiedName($this->getName(), 'prefix') .
 			'/joomla.asset.json';

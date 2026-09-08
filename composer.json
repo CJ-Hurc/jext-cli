@@ -1,6 +1,6 @@
 {
 	"name": "ahamed/jext-cli",
-	"description": "This is a cli tool for building joomla component",
+	"description": "CLI tool for scaffolding J4 extension component boilerplate",
 	"type": "library",
 	"license": "MIT",
 	"version": "1.0.0",

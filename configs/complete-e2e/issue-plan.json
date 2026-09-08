@@ -1,0 +1,72 @@
+{
+  "planVersion": 1,
+  "tier": "pull-request",
+  "nodes": [
+    {
+      "path": "devtools/jext-cli/run.sh",
+      "kind": "source",
+      "risk": "application",
+      "requiredProofs": ["unit"]
+    },
+    {
+      "path": "run.sh",
+      "kind": "source",
+      "risk": "application",
+      "requiredProofs": ["unit"]
+    },
+    {
+      "path": "scripts/complete-e2e/prove.sh",
+      "kind": "source",
+      "risk": "application",
+      "requiredProofs": ["unit"]
+    },
+    {
+      "path": "scripts/complete-e2e/prove/repository.py",
+      "kind": "source",
+      "risk": "application",
+      "requiredProofs": ["unit"]
+    },
+    {
+      "path": "configs/complete-e2e/list-runtime-clis.sh",
+      "kind": "source",
+      "risk": "application",
+      "requiredProofs": ["unit"]
+    }
+  ],
+  "edges": [],
+  "claims": [
+    {
+      "claimId": "jext-cli-dual-origin-contract",
+      "description": "Dual-origin CLI help+validate+occupancy prove without mutating host",
+      "source": [
+        "devtools/jext-cli/run.sh",
+        "run.sh",
+        "scripts/complete-e2e/prove.sh"
+      ],
+      "requiredProofs": ["unit"]
+    }
+  ],
+  "inputs": [
+    {"kind": "source", "path": "devtools/jext-cli/run.sh"},
+    {"kind": "source", "path": "run.sh"},
+    {"kind": "source", "path": "scripts/complete-e2e/prove.sh"},
+    {"kind": "source", "path": "scripts/complete-e2e/prove/repository.py"},
+    {"kind": "source", "path": "scripts/complete-e2e/prove/entity.py"},
+    {"kind": "source", "path": "configs/complete-e2e/runtime.json"},
+    {"kind": "source", "path": "configs/complete-e2e/list-runtime-clis.sh"},
+    {"kind": "source", "path": "bin/jext-cli"}
+  ],
+  "commands": [
+    {
+      "commandId": "cli-help-validate-occupancy-smoke",
+      "proofTypes": ["unit"],
+      "argv": [
+        "bash",
+        "-lc",
+        "bash scripts/complete-e2e/prove.sh"
+      ],
+      "cwd": ".",
+      "timeoutSec": 120
+    }
+  ]
+}

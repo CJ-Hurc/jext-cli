@@ -65,6 +65,7 @@ case "$cmd" in
 		require_file "scripts/complete-e2e/prove/repository.py"
 		require_file "composer.json"
 		require_file "phpunit.xml"
+		require_file "configs/complete-e2e/issue-plan.json"
 		require_file "tests/CompleteE2e/CompleteE2eLibraryContractTest.php"
 		grep -qi 'jext-cli\|JEXT-CLI' "$ROOT/README.md" || { echo "validate fail: README identity" >&2; exit 1; }
 		grep -q 'JEXT_CLI_ALLOWED' "$ROOT/run.sh" || { echo "validate fail: root allow gate" >&2; exit 1; }

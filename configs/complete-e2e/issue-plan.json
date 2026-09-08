@@ -6,31 +6,31 @@
       "path": "devtools/jext-cli/run.sh",
       "kind": "source",
       "risk": "application",
-      "requiredProofs": ["unit"]
+      "requiredProofs": ["contract"]
     },
     {
       "path": "run.sh",
       "kind": "source",
       "risk": "application",
-      "requiredProofs": ["unit"]
+      "requiredProofs": ["contract"]
     },
     {
       "path": "scripts/complete-e2e/prove.sh",
       "kind": "source",
       "risk": "application",
-      "requiredProofs": ["unit"]
+      "requiredProofs": ["contract"]
     },
     {
       "path": "scripts/complete-e2e/prove/repository.py",
       "kind": "source",
       "risk": "application",
-      "requiredProofs": ["unit"]
+      "requiredProofs": ["contract"]
     },
     {
       "path": "configs/complete-e2e/list-runtime-clis.sh",
       "kind": "source",
       "risk": "application",
-      "requiredProofs": ["unit"]
+      "requiredProofs": ["contract"]
     }
   ],
   "edges": [],
@@ -43,7 +43,7 @@
         "run.sh",
         "scripts/complete-e2e/prove.sh"
       ],
-      "requiredProofs": ["unit"]
+      "requiredProofs": ["contract"]
     }
   ],
   "inputs": [
@@ -58,15 +58,36 @@
   ],
   "commands": [
     {
-      "commandId": "cli-help-validate-occupancy-smoke",
-      "proofTypes": ["unit"],
-      "argv": [
-        "bash",
-        "-lc",
-        "bash scripts/complete-e2e/prove.sh"
-      ],
+      "commandId": "jext-cli-root-fail-closed",
+      "proofTypes": ["contract"],
+      "argv": ["bash", "-c", "JEXT_CLI_ALLOWED=no bash run.sh; test $? -ne 0"],
       "cwd": ".",
-      "timeoutSec": 120
+      "timeoutMs": 15000,
+      "reports": []
+    },
+    {
+      "commandId": "jext-cli-status-help",
+      "proofTypes": ["contract"],
+      "argv": ["bash", "devtools/jext-cli/run.sh", "status"],
+      "cwd": ".",
+      "timeoutMs": 15000,
+      "reports": []
+    },
+    {
+      "commandId": "jext-cli-validate",
+      "proofTypes": ["contract"],
+      "argv": ["bash", "devtools/jext-cli/run.sh", "validate"],
+      "cwd": ".",
+      "timeoutMs": 30000,
+      "reports": []
+    },
+    {
+      "commandId": "jext-cli-prove",
+      "proofTypes": ["contract"],
+      "argv": ["bash", "scripts/complete-e2e/prove.sh"],
+      "cwd": ".",
+      "timeoutMs": 180000,
+      "reports": []
     }
   ]
 }

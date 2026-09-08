@@ -10,3 +10,4 @@ composer.phar
 __pycache__/
 *.pyc
 .phpunit.result.cache
+.phpunit.cache/
